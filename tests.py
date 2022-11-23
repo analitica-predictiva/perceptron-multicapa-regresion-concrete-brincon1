@@ -16,11 +16,11 @@ def test_01():
     python3 tests.py 01
     """
 
-    x_data, y_data = preguntas.pregunta_01()
+    x, y = preguntas.pregunta_01()
 
-    assert x_data.shape == (1030, 8)
-    assert y_data.shape == (1030,)
-    assert "strength" not in x_data.columns
+    assert x.shape == (1030, 8)
+    assert y.shape == (1030,)
+    assert "strength" not in x.columns
 
 
 def test_02():
